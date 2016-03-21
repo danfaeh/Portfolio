@@ -1,4 +1,9 @@
 body{
 	background: url(http://res2.windows.microsoft.com/resbox/en/windows/main/01fdadc8-e0e2-46a2-aac8-50b174f40cca_4.jpg) no-repeat center center fixed;
   background-size: cover;
+  background-color: cyan;
+}
+
+#carousel{
+	text-align: center;
 }
