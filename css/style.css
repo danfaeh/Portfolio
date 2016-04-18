@@ -48,8 +48,21 @@ p {
 .bg-about {
     background-color: #f05f40;
     color: #fff;
-    /*background-color: #D3E6F3;*/
-    /*height: 100%;*/
+    height: 80%;
+}
+
+.about-info{
+    bottom: 2em;
+    position: relative;
+}
+
+.skill-section{
+    bottom: 1em;
+    position: relative; 
+}
+
+#skills{
+    background-color: #D3E6F3;
 }
 
 .bg-dark {
@@ -74,9 +87,7 @@ aside {
 }
 
 .navbar-default {
-    border-color: rgba(34,34,34,.05);
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -86,35 +97,40 @@ aside {
     text-transform: uppercase;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     font-weight: 700;
-    color: #f05f40;
 }
 
-.navbar-default .navbar-header .navbar-brand:hover,
-.navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+.navbar-default .navbar-header .navbar-brand {
+    color: rgba(255,255,255,1);
+    margin-left: 3em;
+      text-shadow:
+        0px 0px 0 #000,
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+       -1px  1px 0 #000,
+        1px  1px 0 #000;
 }
 
-.navbar-default .nav > li>a,
-.navbar-default .nav>li>a:focus {
+.navbar-default .nav > li>a{
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
-    color: #222;
+      text-shadow:
+        0px 0px 0 #000,
+       -1px -1px 0 #000,  
+        1px -1px 0 #000,
+       -1px  1px 0 #000,
+        1px  1px 0 #000;
 }
 
 .navbar-default .nav > li>a:hover,
-.navbar-default .nav>li>a:focus:hover {
-    color: #f05f40;
+.navbar-header .navbar-brand:hover {
+    color: #f05f40!important;
 }
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #f05f40!important;
-    background-color: transparent;
-}
-
-.navbar-default .nav > li.active>a:hover,
-.navbar-default .nav>li.active>a:focus:hover {
+    font-size: 14px;
+    color: black !important;
     background-color: transparent;
 }
 
@@ -122,18 +138,6 @@ aside {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
         background-color: transparent;
-    }
-
-    .navbar-default .navbar-header .navbar-brand {
-        /*color: rgba(135,206,235,1);*/
-        color: rgba(255,255,255,1);
-        margin-left: 3em;
-          text-shadow:
-            0px 0px 0 #000,
-           -1px -1px 0 #000,  
-            1px -1px 0 #000,
-           -1px  1px 0 #000,
-            1px  1px 0 #000;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -145,12 +149,6 @@ aside {
     .navbar-default .nav>li>a:focus {
         /*color: rgba(135,206,235,1);*/
         color: rgba(255,255,255,1);
-          text-shadow:
-            0px 0px 0 #000,
-           -1px -1px 0 #000,  
-            1px -1px 0 #000,
-           -1px  1px 0 #000,
-            1px  1px 0 #000;
     }
 
     .navbar-default .nav > li>a:hover,
@@ -164,13 +162,23 @@ aside {
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
-        /*font-size: 14px;*/
         color: #f05f40;
+        text-shadow: none;
+    }
+
+    .navbar-default.affix .navbar-nav .page-scroll {
+        color: #f05f40;
+        text-shadow: none;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #eb3812;
+        text-shadow:
+            0px 0px 0 #000,
+           -1px -1px 0 #000,  
+            1px -1px 0 #000,
+           -1px  1px 0 #000,
+            1px  1px 0 #000;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -210,6 +218,7 @@ header .header-content .header-content-inner h1 {
     margin-bottom: 0;
     text-transform: uppercase;
     font-weight: 700;
+    /*splash title*/
     text-shadow:
         0px 0px 0 #000,
        -1px -1px 0 #000,  
@@ -226,6 +235,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-weight: 300;
     font-style: italic;
+    /*splash heading 2*/
     text-shadow:
         0px 0px 0 #000,
        -1px -1px 0 #000,  
@@ -267,18 +277,18 @@ header .header-content .header-content-inner p {
     margin-top: 0;
 }
 
-.service-box {
+.skill-box {
     margin: 50px auto 0;
     max-width: 400px;
 }
 
 @media(min-width:992px) {
-    .service-box {
-        margin: 20px auto 0;
+    .skill-box {
+        margin: 10px auto 40px auto;
     }
 }
 
-.service-box p {
+.skill-box p {
     margin-bottom: 0;
 }
 .portfolio {
