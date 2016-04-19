@@ -52,7 +52,7 @@ p {
 }
 
 .about-info{
-    bottom: 2em;
+    bottom: 4em;
     position: relative;
 }
 
@@ -138,8 +138,20 @@ aside {
     color: black !important;
     background-color: transparent;
 }
-@media(max-width:768px){
+
+@media(max-width:770px){
     .team-member img{
+        height: 20em;
+        width: 20em;
+    }
+
+    .large{
+        font-size: 22px;
+    }
+}
+
+@media(max-width:415px){
+     img{
         height: 13em;
         width: 13em;
     }
@@ -501,7 +513,6 @@ body {
 }
 
 .team-member img{
-    margin: 0 auto;
     border: 7px solid white;
 }
 
