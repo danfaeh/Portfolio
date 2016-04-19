@@ -511,6 +511,13 @@ body {
     border-radius: 10px;
 }
 
+.C4-logo {
+    height: 6em;
+    width: 20em;
+    border: solid 3px black;
+    border-radius: 10px;
+}
+
 
 .large {
     top: 2em;
