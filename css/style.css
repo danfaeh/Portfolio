@@ -140,8 +140,8 @@ aside {
 }
 @media(max-width:768px){
     .team-member img{
-        height: 20em;
-        width: 20em;
+        height: 13em;
+        width: 13em;
     }
 }
 
