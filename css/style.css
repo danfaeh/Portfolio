@@ -61,6 +61,11 @@ p {
     position: relative; 
 }
 
+#portfolio-title{
+    bottom: 3em;
+    position: relative; 
+}
+
 #skills{
     background-color: #D3E6F3;
 }
@@ -179,11 +184,6 @@ aside {
             1px -1px 0 #000,
            -1px  1px 0 #000,
             1px  1px 0 #000;
-    }
-
-    .navbar-default.affix .nav > li>a,
-    .navbar-default.affix .nav>li>a:focus {
-        color: #fff;
     }
 
     .navbar-default.affix .nav > li>a:hover,
@@ -486,28 +486,6 @@ fieldset[disabled] .btn-primary.active {
     padding: 15px 30px;
 }
 
-::-moz-selection {
-    text-shadow: none;
-    color: #fff;
-    background: #222;
-}
-
-::selection {
-    text-shadow: none;
-    color: #fff;
-    background: #222;
-}
-
-img::selection {
-    color: #fff;
-    background: 0 0;
-}
-
-img::-moz-selection {
-    color: #fff;
-    background: 0 0;
-}
-
 body {
     webkit-tap-highlight-color: #222;
 }
@@ -517,7 +495,48 @@ body {
     border: 7px solid white;
 }
 
+.lol-logo {
+    border: solid 5px orange;
+}
+
+.mix-logo {
+    border: solid 3px green;
+    border-radius: 10px;
+}
+
+.dream-logo {
+    height: 6em;
+    width: 20em;
+    border: solid 3px purple;
+    border-radius: 10px;
+}
+
+
 .large {
     top: 2em;
     position: relative;
+}
+
+.skill {
+  color: white;
+  display: inline-block;
+  border: 1px solid #B96648;
+  padding: 8px;
+  margin-top: 15px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(#5C3317, #C36C4D); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5C3317, #C36C4D); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5C3317, #C36C4D); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5C3317, #C36C4D);
+}
+
+.port-section {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: -webkit-linear-gradient(#F9F5F1, #F4F0EB);
+    background: -o-linear-gradient(#F9F5F1, #F4F0EB);
+    background: -moz-linear-gradient(#F9F5F1, #F4F0EB);
+    background: linear-gradient(#F9F5F1, #F4F0EB);
 }
