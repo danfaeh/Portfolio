@@ -138,6 +138,12 @@ aside {
     color: black !important;
     background-color: transparent;
 }
+@media(max-width:768px){
+    .team-member img{
+        height: 20em;
+        width: 20em;
+    }
+}
 
 @media(min-width:768px) {
     .navbar-default {
