@@ -143,6 +143,10 @@ aside {
         height: 13em;
         width: 13em;
     }
+
+    .large{
+        font-size: 14px;
+    }
 }
 
 @media(min-width:768px) {
