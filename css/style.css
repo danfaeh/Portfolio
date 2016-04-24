@@ -27,7 +27,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #eb3812;
+    /*color: #eb3812;*/
 }
 
 h1,
@@ -51,15 +51,15 @@ p {
     height: 80%;
 }
 
-.about-info{
+/*.about-info{
     bottom: 4em;
     position: relative;
-}
+}*/
 
-.skill-section{
+/*.skill-section{
     bottom: 1em;
     position: relative; 
-}
+}*/
 
 #portfolio-title{
     bottom: 3em;
@@ -80,7 +80,7 @@ p {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 aside {
@@ -174,7 +174,6 @@ aside {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        /*color: rgba(135,206,235,1);*/
         color: rgba(255,255,255,1);
     }
 
@@ -220,7 +219,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/splash3.jpg);
+    background-image: url(../img/splash.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -567,4 +566,23 @@ body {
     background: -o-linear-gradient(#F9F5F1, #F4F0EB);
     background: -moz-linear-gradient(#F9F5F1, #F4F0EB);
     background: linear-gradient(#F9F5F1, #F4F0EB);
+}
+
+.down-landing{
+    /*color: white;*/
+    color:inherit;
+    position: relative;
+    top: 50em;
+}
+
+.down-about{
+    color: white;
+    position: relative;
+    top: 3em;
+}
+
+@media(max-width:910px){
+    .fa-angle-down{
+        display:none;
+    }
 }
