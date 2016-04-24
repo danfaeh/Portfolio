@@ -586,3 +586,9 @@ body {
         display:none;
     }
 }
+
+@media(max-height:750px){
+    .fa-angle-down{
+        display:none;
+    }
+}
