@@ -1,5 +1,19 @@
 console.log("connected");
 
+$('#me').on("mouseenter",function(){
+    var num = Math.round(Math.random());
+    console.log("num",num);
+    if (num === 0){
+        $('#pipeImg1').hide();
+        $('#pipeImg2').show();
+        console.log('inside even');
+    } else{
+        $('#pipeImg2').hide();
+        $('#pipeImg1').show();  
+        console.log('inside odd');    
+    }
+});
+
 (function($) {
     "use strict"; // Start of use strict
 
@@ -42,25 +56,3 @@ console.log("connected");
     new WOW().init();
 
 })(jQuery); // End of use strict
-
-
-// $(window).load(function() {
-//   // The slider being synced must be initialized first
-//   $('#carousel').flexslider({
-//     animation: "slide",
-//     controlNav: false,
-//     animationLoop: false,
-//     slideshow: false,
-//     itemWidth: 210,
-//     itemMargin: 5,
-//     asNavFor: '#slider'
-//   });
- 
-//   $('#slider').flexslider({
-//     animation: "slide",
-//     controlNav: false,
-//     animationLoop: false,
-//     slideshow: false,
-//     sync: "#carousel"
-//   });
-// });
