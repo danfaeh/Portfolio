@@ -558,7 +558,8 @@ body {
     background: -webkit-linear-gradient(to right, #D1913C, #FFD194);
     background: -o-linear-gradient(to right, #D1913C, #FFD194);
     background: -moz-linear-gradient(to right, #D1913C, #FFD194);
-    background: linear-gradient(to right, #D1913C, #FFD194);
+    /*background: linear-gradient(to right, #D1913C, #FFD194);*/
+    background: linear-gradient(#EFEFBB, #D4D3DD);
     /*background: linear-gradient(to bottom, #D1913C, #d6ae7b);*/
     border-bottom: 1px solid black;
 }
