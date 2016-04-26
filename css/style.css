@@ -567,7 +567,7 @@ body {
     /*color: white;*/
     color:inherit;
     position: relative;
-    top: 50em;
+    top: 48em;
 }
 
 .down-about{
@@ -575,6 +575,54 @@ body {
     position: relative;
     top: 3em;
 }
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000;
+}
+  /* flip the pane when hovered */
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+.flip-container, .front, .back {
+  width: 24em;
+  height: 23em;
+  margin: 0 auto;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 1.0s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+
+.img-circle{
+  height: 23em;
+  width: 23em;
+}
+
 
 @media(max-width:910px){
     .fa-angle-down{
