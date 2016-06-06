@@ -624,6 +624,35 @@ body {
   width: 23em;
 }
 
+.iphone{
+    background-image: url('../img/iphone.png');
+    height: 409px;
+    width: 246px;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.screen{
+    position: absolute;
+    background-image: url('../img/lolcooldown.png');
+    background-size: cover;
+    top: 65px;
+    left: 44px;
+    width: 159px;
+    height: 284px;
+}
+
+.lolcooldown-logo {
+    height: 8em;
+    width: 17em;
+    border: solid 2px black;
+    border-radius: 10px;
+}
+
+#iphone-container{
+    position: relative;
+    margin: 0 auto;
+}
 
 @media(max-width:910px){
     .fa-angle-down{
