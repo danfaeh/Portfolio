@@ -654,6 +654,14 @@ body {
     margin: 0 auto;
 }
 
+
+
+@media(max-width:767px){
+    .col-xs-12 {
+        float:none;
+    }
+}
+
 @media(max-width:910px){
     .fa-angle-down{
         display:none;
